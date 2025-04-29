@@ -113,9 +113,4 @@ const Mole: React.FC<MoleProps> = ({ index }) => {
     </div>
   );
 };
-
-<<<<<<< HEAD
 export default Mole;
-=======
-export default Mole;
->>>>>>> dae98ae323912bed01819f41597f537a09f8845c

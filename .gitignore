@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# FTP関連
+.env.ftp
+*.sh
+upload-*.sh
+download-*.sh
+check-*.sh
+lftp-log.txt
+downloaded-js.js
+*.html
+!index.html

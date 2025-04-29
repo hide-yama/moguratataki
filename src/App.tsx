@@ -13,9 +13,4 @@ function App() {
     </div>
   );
 }
-
-<<<<<<< HEAD
 export default App;
-=======
-export default App;
->>>>>>> dae98ae323912bed01819f41597f537a09f8845c
