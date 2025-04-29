@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gold-glow {
+  0% {
+    filter: brightness(1.2) drop-shadow(0 0 8px #FFD70088);
+    opacity: 0.7;
+  }
+  50% {
+    filter: brightness(2.2) drop-shadow(0 0 32px #FFD700);
+    opacity: 1;
+  }
+  100% {
+    filter: brightness(1.2) drop-shadow(0 0 8px #FFD70088);
+    opacity: 0.7;
+  }
+}
+.animate-gold-glow {
+  animation: gold-glow 0.7s ease-in-out;
+}
+
+@keyframes gold-glow-ring {
+  0% {
+    box-shadow: 0 0 0 0 #FFD70088;
+  }
+  50% {
+    box-shadow: 0 0 32px 8px #FFD700cc, 0 0 64px 16px #fff70088;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #FFD70088;
+  }
+}
+.animate-gold-glow-ring {
+  animation: gold-glow-ring 0.7s ease-in-out;
+}
