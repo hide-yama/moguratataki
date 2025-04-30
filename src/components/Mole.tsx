@@ -82,6 +82,13 @@ const Mole: React.FC<MoleProps> = ({ index }) => {
 
   return (
     <div className="relative group">
+      {/* 手のひらの絵文字を最外部のdivに配置して、overflow-hiddenの影響を受けないようにする */}
+      {isVisible && !isWhacked && (
+        <div className="absolute -top-0 -left-2 md:-top-0 md:-left-2 z-30 text-4xl md:text-6xl animate-bounce">
+          🖐️
+        </div>
+      )}
+      
       <div className={`absolute inset-0 ${bgColor} rounded-full transform scale-110 opacity-0 group-hover:opacity-100 transition-all duration-300`} />
       
       <div className={`aspect-square bg-gradient-to-b from-purple-950 to-purple-900 rounded-full overflow-hidden flex items-center justify-center shadow-[inset_0_2px_8px_rgba(0,0,0,0.4)] relative border border-purple-800/50
@@ -100,7 +107,7 @@ const Mole: React.FC<MoleProps> = ({ index }) => {
         >
           <img 
             src={isWhacked ? hit : normal} 
-            alt={`${moleType} mole`}
+            alt={`${moleType} character`}
             className={`
               w-full h-full object-contain rounded-full ring-2 ${displayRingColor}
               transition-all duration-200 transform
