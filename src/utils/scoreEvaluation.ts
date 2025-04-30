@@ -8,7 +8,7 @@ export const getScoreEvaluation = (score: number): ScoreEvaluation => {
   if (score >= 50) {
     return {
       rank: "達人",
-      description: "あなたは生まれながらのモグラ叩き名人です！",
+      description: "あなたは100年に1人の天才です！",
       color: "text-yellow-400"
     };
   } else if (score >= 30) {
